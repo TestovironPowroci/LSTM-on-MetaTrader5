@@ -193,7 +193,7 @@ for epoch in range(epochs):
              'optimizer': opt.state_dict()}
 
     torch.save(classifier.state_dict(), 'classifier.pth')
-    torch.save(opt.state_dict(), 'load.pth')
+    torch.save(opt.state_dict(), 'optimizer.pth')
     torch.save(state, 'state.pth')
     if epoch % 20 == 0:
         classifier.eval()
@@ -271,6 +271,6 @@ for epoch in range(epochs):
         if 120 < good_decisions:  # if profit is high enough, save
             if (good_decisions / actions_taken) > 0.6:
                 torch.save(classifier.state_dict(), 'path/classifier120.pth')
-                torch.save(opt.state_dict(), 'path/load120.pth')
+                torch.save(opt.state_dict(), 'path/optimizer120.pth')
                 torch.save(state, 'path/state120.pth')
                 print("zapis formuły.")
