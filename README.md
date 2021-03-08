@@ -15,7 +15,7 @@ Long Short Term Memory neural network trading on MetaTrader5 (Demo/Idea)
 6. In MetaTrader5 load controling position.mq5 and live input data.mq5 on chart.
 
 7. Turn on "One-Click Trading".
-8. 
+ 
 ![one click trading](https://user-images.githubusercontent.com/79338815/110393510-f0d03e00-806a-11eb-8986-9d77304ffb68.JPG)
 
 8. Write correct X AND Y coords of buy and sell buttons. (Use a mousotron or something similar for this.)
