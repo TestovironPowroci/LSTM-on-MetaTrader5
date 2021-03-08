@@ -16,6 +16,9 @@ hidden_size = 8
 n_layers = 3
 output_size = 3
 
+mem_address = x0...
+input_file_path = ''
+
 screenWidth, screenHeight = size()
 currentMouseX, currentMouseY = position()
 
@@ -216,13 +219,13 @@ if __name__ == '__main__':
         sleep(1)
 
         data = np.loadtxt(
-            'path/date.csv',
+            input_file_path,
             delimiter=',', dtype=np.float32, encoding='utf-16')
         LSTMnetwork = Tensor(data).view(1, seq_lengths, input_size)
         rwm = ReadWriteMemory()
         ProcID = rwm.GetProcessIdByName('terminal64.exe')
         hProcess = rwm.OpenProcess(ProcID)
-        pos = rwm.ReadProcessMemory(hProcess, int(0,16))
+        pos = rwm.ReadProcessMemory(hProcess, mem_address)
         print(pos)
 
         if pos == 12332100:
