@@ -154,22 +154,16 @@ def play_episode(s):
 
     if a == 2:
         print("Buy")
-        moveTo(262, 457)
-        click()
         moveTo(164, 155)
         click()
-        moveTo(672, 181)
-        click()
+       
 
 
     elif a == 1:
         print("Sell")
-        moveTo(262, 457)
-        click()
         moveTo(40, 153)
         click()
-        moveTo(672, 181)
-        click()
+     
 
 
 
