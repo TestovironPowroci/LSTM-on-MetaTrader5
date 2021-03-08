@@ -28,7 +28,7 @@ Long Short Term Memory neural network trading on MetaTrader5 (Demo/Idea)
 
 11. Put path and memory address here.
 
-![variables to change](https://user-images.githubusercontent.com/79338815/110396929-22e49e80-8071-11eb-8dcf-55a5643d125e.JPG)
+![variables](https://user-images.githubusercontent.com/79338815/110397706-a488fc00-8072-11eb-9d54-1b9b35042e5a.JPG)
 
 12. Run LSTMlive.py and put MetaTrader5 on desktop.
 
